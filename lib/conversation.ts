@@ -12,7 +12,7 @@ export const getOrCreateConversation = async (memberOneId: string, memberTwoId: 
 
 const findConversation = async (memberOneId: string, memberTwoId: string) => {
   try {
-    return await db.conversation.findOne({
+    return await db.conversation.findFirst({
       $or: [
         {
           memberOneId: memberOneId,
