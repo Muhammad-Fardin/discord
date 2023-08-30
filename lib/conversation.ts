@@ -32,6 +32,7 @@ const findConversation = async (memberOneId: string, memberTwoId: string) => {
 const createNewConversation = async (memberOneId: string, memberTwoId: string) => {
   try {
     return await db.conversation.create({
+      // @ts-ignore
       memberOneId: memberOneId,
       memberTwoId: memberTwoId,
     });

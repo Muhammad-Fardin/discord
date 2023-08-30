@@ -49,6 +49,7 @@ const MemberIdPage = async ({
     return redirect(`/servers/${params.serverId}`);
   }
 
+  // @ts-ignore
   const { memberOne, memberTwo } = conversation;
 
   const otherMember = memberOne.profileId === profile.id ? memberTwo : memberOne;
