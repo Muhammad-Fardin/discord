@@ -50,9 +50,9 @@ const MemberIdPage = async ({
   }
 
   // @ts-nocheck
-  const { memberOne, memberTwo } = conversation;
+  const { memberOneId, memberTwoId } = conversation;
 
-  const otherMember = memberOne.profileId === profile.id ? memberTwo : memberOne;
+  const otherMember = memberOneId.profileId === profile.id ? memberTwoId : memberOneId;
 
   return ( 
     <div className="bg-white dark:bg-[#313338] flex flex-col h-full">
